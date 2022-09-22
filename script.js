@@ -226,6 +226,7 @@ shuffleArray(videoSource)
   
 var videoCount = videoSource.length;
 var i=1;
+var fullscreenActive = false
 
 $("#myVideo").attr("src",videoSource[0]);
   $('#myVideo').on('ended', function(e) {
@@ -263,13 +264,44 @@ function getFullscreenElement() {
     || document.msFullscreenElement;    //ie/edge support
  }
 
+ function requestFullscreen(element) {
+  fullscreenActive = true
+	if (element.requestFullscreen) {
+		element.requestFullscreen();
+	} else if (element.webkitRequestFullscreen) {
+		element.webkitRequestFullscreen();
+	} else if (element.mozRequestFullScreen) {
+		element.mozRequestFullScreen();
+	} else if (element.msRequestFullscreen) {
+		element.msRequestFullscreen();
+	} else {
+		console.log('Fullscreen API is not supported.');
+	}
+};
+
+function exitFullscreen() {
+  fullscreenActive = false
+	if (document.exitFullscreen) {
+		document.exitFullscreen();
+	} else if (document.webkitExitFullscreen) {
+		document.webkitExitFullscreen();
+	} else if (document.mozCancelFullScreen) {
+		document.mozCancelFullScreen();
+	} else if (document.msExitFullscreen) {
+		document.msExitFullscreen();
+	} else {
+		console.log('Fullscreen API is not supported.');
+	}
+};
+
+
 function toggleFullscreen() {
-    if(getFullscreenElement()) {
-       document.exitFullscreen();
-    }else {
-  document.documentElement.requestFullscreen().catch(console.log);
+    if (fullscreenActive === false) {
+      requestFullscreen(document.documentElement)
+    } else {
+      exitFullscreen()
     }
- }
+}
  
 document.addEventListener('click', () => {
     toggleFullscreen();
