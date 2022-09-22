@@ -1,8 +1,8 @@
 # Earth
 
-Apple Aerial screensavers on the web paired with some good tunes courtesy of SoundCloud.
+Apple Aerial screensavers on the web paired with SoundCloud.
 
-Videos pulled from Apple's Server.
+Videos are pulled from Apple's Server.
 
 **Use**
 
