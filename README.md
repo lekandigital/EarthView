@@ -24,3 +24,7 @@ Press RETURN or click to enter fullscreen
 **Major Issues**
 
 Only works on Mac. .mov not playable on Windows.
+
+**TODO**
+
+Hide soundcloud bar
