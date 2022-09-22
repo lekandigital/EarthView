@@ -20,3 +20,5 @@ Press RETURN or click to enter fullscreen
 <img width="1512" alt="Screen Shot 2022-09-22 at 6 22 47 AM" src="https://user-images.githubusercontent.com/12865911/191729686-3364eed3-452f-4d94-a1af-d63fbfa0635d.png">
 
 <img width="1512" alt="Screen Shot 2022-09-22 at 6 12 42 AM" src="https://user-images.githubusercontent.com/12865911/191729528-e1239994-7b52-41c0-86b9-6fc82bb33e8b.png">
+**Major Issues**
+Only works on Mac. .mov not playable on Windows.
