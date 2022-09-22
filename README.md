@@ -1,10 +1,12 @@
 # Earth
 
-https://yeri.io/erth
-
 Apple Aerial screensavers on the web.
 
 Videos pulled from Apple's Server.
+
+**Use**
+
+https://yeri.io/erth
 
 **Instuctions**
 
