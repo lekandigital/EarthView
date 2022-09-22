@@ -362,6 +362,19 @@ var videoCount = videoSource.length;
 var i=1;
 var fullscreenActive = false
 
+function convertVideo(givenURL) {
+
+  var file = new Blob(
+    [givenURL],
+    {"type" : "video/mp4"});
+
+  var mp4VideoFile = new File(
+      [file],
+      { "type" : 'video/mp4' });
+
+  return mp4VideoFile
+}
+
 $("#myVideo").attr("src",videoSource[0]);
   $('#myVideo').on('ended', function(e) {
 
