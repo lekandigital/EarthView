@@ -4,6 +4,9 @@ https://yeri.io/erth
 
 Apple Aerial screensavers on the web.
 
+Press SPACE to skip
+Press RETURN or click to enter fullscreen
+
 Videos pulled from Apple's Server.
 
 <img width="1512" alt="Screen Shot 2022-09-22 at 5 13 37 AM" src="https://user-images.githubusercontent.com/12865911/191729487-76929530-2ad5-4b53-82b0-af6b54107ad4.png">
