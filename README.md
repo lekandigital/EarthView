@@ -9,6 +9,7 @@ Videos pulled from Apple's Server.
 **Instuctions**
 
 Press SPACE to skip
+
 Press RETURN or click to enter fullscreen
 
 **Screenshots**
