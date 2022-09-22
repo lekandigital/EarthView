@@ -1,6 +1,6 @@
 # Earth
 
-Apple Aerial screensavers on the web.
+Apple Aerial screensavers on the web paired with some good tunes courtesy of SoundCloud.
 
 Videos pulled from Apple's Server.
 
