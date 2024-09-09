@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    cursor: none;
+    overflow: hidden;
+}
+#videoContainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.location {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.controls-area {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 66.67%;
+    height: 40px;
+    background-color: rgba(64, 64, 64, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.progress-container {
+    width: 90%;
+    height: 6px;
+    background-color: rgba(200, 200, 200, 0.5);
+    border-radius: 3px;
+}
+#progressBar {
+    width: 0;
+    height: 100%;
+    background-color: white;
+    border-radius: 3px;
+}
+#musicButton {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+.notification {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    opacity: 0;
+    transition: opacity 0.5s ease-out, visibility 0.5s;
+    visibility: hidden;
+}
+.centered-notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 165, 0, 0.45);
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    white-space: pre-wrap;
+    transition: opacity 0.5s ease-out, visibility 0.5s;
+    line-height: 1.5;
+}

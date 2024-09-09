@@ -1,30 +1,73 @@
-# Earth
+# Earth: Apple Aerial Web Viewer
 
-Apple Aerial screensavers on the web paired with SoundCloud.
+This project is a minimalistic video player that randomly plays ultra high definition videos of beautiful locations around the Earth, sourced from **Apple Aerial screensaver videos**. It includes music playback from a radio stream, fullscreen toggling, and basic controls for skipping, pausing, and progress tracking.
 
-Videos are pulled from Apple's Server.
+## Features
 
-**Use**
+- Randomly plays one of many ultra high definition videos.
+- Displays location information for each video.
+- Allows toggling between play and pause by clicking on the video.
+- Supports fullscreen mode (Enter key).
+- Plays background music from New South Wales 94.5 FM.
+- Simple progress bar to track video progress.
+- Custom controls for skipping videos (Spacebar), muting/unmuting music, and more.
+- Cursor auto-hides after 2 seconds of inactivity.
+- Basic notifications for user guidance.
 
-https://yeri.io/erth
+## Demo
 
-**Instuctions**
+Here’s how the player looks:
 
-Press SPACE to skip
+![Demo Image](demo-screenshot-1.png)
+![Demo Image](demo-screenshot-2.png)
+![Demo Image](demo-screenshot-3.png)
 
-Press RETURN or click to enter fullscreen 
+## Controls
 
-**Screenshots**
-<img width="1512" alt="Screen Shot 2022-09-22 at 5 13 37 AM" src="https://user-images.githubusercontent.com/12865911/191729487-76929530-2ad5-4b53-82b0-af6b54107ad4.png">
+- **Click**: Play/Pause the video.
+- **Spacebar**: Skip to the next video.
+- **Enter**: Toggle fullscreen mode.
+- **Click on the progress bar**: Seek to the desired point in the video.
+- **🎵 Button**: Toggle background music on/off.
 
-<img width="1512" alt="Screen Shot 2022-09-22 at 6 22 47 AM" src="https://user-images.githubusercontent.com/12865911/191729686-3364eed3-452f-4d94-a1af-d63fbfa0635d.png">
+## Installation and Usage
 
-<img width="1512" alt="Screen Shot 2022-09-22 at 6 12 42 AM" src="https://user-images.githubusercontent.com/12865911/191729528-e1239994-7b52-41c0-86b9-6fc82bb33e8b.png">
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/lekandigital/earth.git
+    cd earth
+    ```
 
-**Major Issues**
+2. You can directly open the `index.html` file in any supported web browser to run the app. 
 
-Only works on Mac. .mov not playable on Windows.
+3. Make sure you have an active internet connection, as it streams audio from an external radio station and plays videos from external URLs.
 
-**TODO**
+## File Structure
 
-Hide soundcloud bar
+- `index.html`: Main HTML file containing the player structure and layout.
+- `styles.css`: Contains the styling for the video player, controls, and notifications.
+- `scripts.js`: JavaScript file for controlling video playback, audio, fullscreen, and user interactions.
+- `data.js`: Contains the JSON data of videos, including URLs and location details.
+
+## Supported Platforms
+
+- **MacOS**: Works on Safari and Chrome.
+- **Windows**: Compatibility is currently not guaranteed.
+
+## Future Enhancements
+
+- Improve compatibility with more browsers and platforms.
+- Implement local video caching for offline play.
+
+## Contributing
+
+Feel free to contribute by forking the repository and submitting pull requests. Any improvements and bug fixes are welcome.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+## Acknowledgements
+
+- Video assets are from Apple's aerial screensaver.
+- Radio stream from [FBi Radio](https://fbiradio.com/).
