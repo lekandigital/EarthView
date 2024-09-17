@@ -1,11 +1,17 @@
 # EarthView: Apple Aerial Web Viewer
 
-This project is a minimalistic video player that randomly plays ultra high definition videos of beautiful locations around the Earth, sourced from **Apple Aerial screensaver videos**. It includes music playback from a radio stream, fullscreen toggling, and basic controls for skipping, pausing, and progress tracking.
+This project is a minimalistic video player that randomly plays ultra-high-definition videos of beautiful locations around the Earth, sourced from Apple Aerial screensaver videos. It includes enhanced features like music playback, video progress indicators, and fullscreen toggling.
+
+## What's New (v1.1)
+- Added: Video length and time-elapsed indicators.
+- Improved: Enhanced design for a more user-friendly experience.
+- Optimized: Refined controls for smoother interaction.
 
 ## Features
 
 - Randomly plays one of many ultra high definition videos.
 - Displays location information for each video.
+- NEW: Video length and time-elapsed indicators.
 - Allows toggling between play and pause by clicking on the video.
 - Supports fullscreen mode (Enter key).
 - Plays background music from New South Wales 94.5 FM.
