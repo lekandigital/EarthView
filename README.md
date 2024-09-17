@@ -1,4 +1,4 @@
-# Earth: Apple Aerial Web Viewer
+# EarthView: Apple Aerial Web Viewer
 
 This project is a minimalistic video player that randomly plays ultra high definition videos of beautiful locations around the Earth, sourced from **Apple Aerial screensaver videos**. It includes music playback from a radio stream, fullscreen toggling, and basic controls for skipping, pausing, and progress tracking.
 
@@ -34,8 +34,8 @@ Here’s how the player looks:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/lekandigital/earth.git
-    cd earth
+    git clone https://github.com/lekandigital/EarthView.git
+    cd EarthView
     ```
 
 2. You can directly open the `index.html` file in any supported web browser to run the app. 

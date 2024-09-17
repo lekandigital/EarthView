@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Earth</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EarthView</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="videoContainer">
-        <video id="videoPlayer" autoplay muted playsinline>
-            Your browser does not support the video tag.
-        </video>
-        <div class="location" id="locationLabel">Location: </div>
-        <div class="controls-area">
-            <div class="progress-container">
-                <div id="progressBar"></div>
-            </div>
-            <button id="musicButton">🎵</button>
-        </div>
+  <div id="videoContainer">
+    <video id="videoPlayer" autoplay muted playsinline>
+      Your browser does not support the video tag.
+    </video>
+    <div class="location" id="locationLabel">Location: </div>
+    <div class="controls-area">
+      <div class="progress-container">
+        <div class="progress-bar-container"></div>
+      </div>
+      <button id="musicButton">🔇</button>
+      <span class="time">0:00 / 0:00</span>
     </div>
+  </div>
 
-    <audio id="audioPlayer" src="https://streamer.fbiradio.com/stream" preload="none"></audio>
-    <div id="notification" class="notification"></div>
-    <div id="centeredNotification" class="centered-notification">
-        MacOS: Works on Safari, and Chrome
-        
-        Windows: Unsure
-
-        Controls:
-        - Press Return to enter full screen
-        - Press Spacebar to skip video
-        - Click to pause/play
+  <audio id="audioPlayer" src="https://streamer.fbiradio.com/stream" preload="none"></audio>
+  <div id="notification" class="notification"></div>
+  <div class="card">
+    <div class="y2k-element"></div>
+    <div class="y2k-element"></div>
+    <div class="card-content">
+      MacOS: Works on Safari, and Chrome <br>
+      Windows: Unsure <br>
+      Controls: <br>
+      - Press Return to enter full screen <br>
+      - Press Spacebar to skip video <br>
+      - Click to pause/play
     </div>
+  </div>
 
-    <script src="data.js"></script>
-    <script src="scripts.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
